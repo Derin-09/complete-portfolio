@@ -31,6 +31,9 @@ const Inspirations = () => {
             <div className="w-[200px] h-[70px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
               User-Centric<br />Design
             </div>
+            <div className="w-[200px] h-[70px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
+              Dribble<br />Design
+            </div>
           </InfiniteCarousel>
         </section>
       </BackgroundLayout>

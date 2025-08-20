@@ -42,7 +42,7 @@ const About = () => {
             <div className=' flex flex-col space-y-2 '>
               <div>
                 <div className='flex items-center w-fit gap-2 px-3 py-1 rounded-full bg-[#191919]'>
-                  <div className='w-2 h-2 0 rounded-full'></div>
+                  <div className='w-2 h-2 bg-green-600 rounded-full'></div>
                   <p className='text-sm'>available to work</p>
                 </div>
               </div>
