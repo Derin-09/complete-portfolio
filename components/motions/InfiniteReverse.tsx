@@ -8,7 +8,7 @@ type InfiniteType = {
   gap?: number
 }
 
-export default function InfiniteCarousel({ children, speed = 30, gap = 20 }: InfiniteType) {
+export default function InfiniteReverse({ children, speed = 30, gap = 20 }: InfiniteType) {
   const items = React.Children.toArray(children)
   const containerRef = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(0)
@@ -27,7 +27,7 @@ export default function InfiniteCarousel({ children, speed = 30, gap = 20 }: Inf
       <motion.div
         ref={containerRef}
         className="flex"
-        animate={{ x: [0, -width] }}
+        animate={{ x: [ -width, 0] }}
         transition={{
           repeat: Infinity,
           ease: "linear",

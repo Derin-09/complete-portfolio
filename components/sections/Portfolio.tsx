@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Beginning from './Beginning'
 import About from './About'
 import Inspirations from './Inspirations'
@@ -11,6 +11,7 @@ import Hobbies from './Hobbies'
 import Contact from './Contact'
 
 const Portfolio = () => {
+ 
   return (
     <main>
       <Beginning />

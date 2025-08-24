@@ -13,7 +13,7 @@ export default function BackgroundLayout({ children }: { children: ReactNode }) 
         hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]
         hover:scale-[90%]
         transition-shadow duration-300
-        ${ clicked ? 'shadow-[0_0_20px_rgba(168,85,247,0.3)] scale-[90%]' : 'shadow-none scale-[100%]'}
+        ${ clicked ? 'shadow-[0_0_20px_rgba(168,85,247,0.3)] scale-[95%]' : 'shadow-none scale-[100%]'}
       `}
     >
       {children}
