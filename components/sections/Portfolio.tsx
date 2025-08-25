@@ -11,19 +11,39 @@ import Hobbies from './Hobbies'
 import Contact from './Contact'
 
 const Portfolio = () => {
- 
+
   return (
-    <main>
-      <Beginning />
-      <About />
-      <Inspirations />
-      <Stacks />
-      <Projects />
-      <Services />
-      <Experience />
-      <Feedbacks />
-      <Hobbies />
-      <Contact />
+    <main className='md:grid grid-cols-9'>
+      <div className='grid-cols-3  md:order-2 order-1'>
+        <Beginning />
+      </div>
+      <div className='grid-cols-3 md:order-2 order-2'>
+        <About />
+      </div>
+      <div className='grid-cols-3 md:order-2 order-3'>
+        <Inspirations />
+      </div>
+      <div className='grid-cols-2 md:order-1 order-4'>
+        <Stacks />
+      </div>
+      <div className='grid-cols-3 md:order-2 order-5'>
+        <Projects />
+      </div>
+      <div className='grid-cols-3 md:order-2 order-6'>
+        <Services />
+      </div>
+      <div className='grid-cols-3 md:order-3 order-7'>
+        <Experience />
+      </div>
+      <div className='grid-cols-3 md:order-2 order-8'>
+        <Feedbacks />
+      </div>
+      <div className='grid-cols-3 md:order-2 order-9'>
+        <Hobbies />
+      </div>
+      <div className='grid-cols-3 md:order-2 order-10'>
+        <Contact />
+      </div>
     </main>
   )
 }
