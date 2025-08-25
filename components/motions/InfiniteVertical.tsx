@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useRef, useState } from "react"
+import React, { useRef, useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
 type InfiniteType = {
@@ -8,26 +8,25 @@ type InfiniteType = {
   gap?: number
 }
 
-export default function InfiniteVl({ children, speed = 30, gap = 20 }: InfiniteType) {
+export default function InfiniteVertical({ children, speed = 30, gap = 20 }: InfiniteType) {
   const items = React.Children.toArray(children)
   const containerRef = useRef<HTMLDivElement>(null)
-  const [width, setWidth] = useState(0)
+  const [height, setHeight] = useState(0)
 
-    useEffect(() => {
+  useEffect(() => {
     if (containerRef.current) {
-      setWidth(containerRef.current.scrollWidth / 2) 
+      setHeight(containerRef.current.scrollHeight / 2) // one "set" of items
     }
   }, [children])
-
 
   if (!items.length) return null
 
   return (
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-full h-[200px]"> 
       <motion.div
         ref={containerRef}
-        className="flex"
-        animate={{ x: [0, -width] }}
+        className="flex flex-col"
+        animate={{ y: [0, -height] }}
         transition={{
           repeat: Infinity,
           ease: "linear",

@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 import BackgroundLayout from '../ui/layout'
 import Image from 'next/image'
 import Inspo from '@/public/images/inspo.png'
 import InfiniteVertical from '../motions/InfiniteVertical'
+import Button from '../ui/Button'
 
   
   const content = [
@@ -22,7 +24,7 @@ import InfiniteVertical from '../motions/InfiniteVertical'
 
 const Experience = () => {
   return (
-    <main className='mt-5 w-full select-none'>
+    <main className='mt-5 w-full relative select-none'>
       <BackgroundLayout>
         <section className='flex flex-col gap-4 items-center justify-center p-5'>
           <div className='flex flex-col items-center'>
@@ -36,16 +38,21 @@ const Experience = () => {
             />
             <p className="text-sm leading-none">Experience</p>
           </div>
-          <p className='mb-7'>Solutions Suites</p>
+          <p className='mb-7'>Work Highlights</p>
           </div>
           
           <InfiniteVertical speed={5} gap={15}>
             { content.map((c, idx) => (
-            <div key={idx} className="w-[200px] h-[70px] rounded-xl p-2 text-[#916CE7] bg-[#191919]">
+            <div key={idx} className="w-full h-[70px] rounded-xl p-2 px-3 text-[#916CE7] bg-[#191919]">
               <p className='font-semibold'> {c.text}</p>  <p className=' text-[#999999]'> {c.period} </p>
             </div>
           ))}
           </InfiniteVertical>
+        <div className='absolute top-[40%]' onClick={(e) => {
+            e.stopPropagation()
+          }}>
+            <Button prop='View Experiences' />
+          </div>
         </section>
       </BackgroundLayout>
     </main>

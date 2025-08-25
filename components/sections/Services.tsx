@@ -1,9 +1,11 @@
+'use client'
 import React from 'react'
 import BackgroundLayout from '../ui/layout'
 import Image from 'next/image'
 import Inspo from '@/public/images/inspo.png'
 import InfiniteCarousel from '../motions/InfiniteCarousel'
 import InfiniteReverse from '../motions/InfiniteReverse'
+import Button from '../ui/Button'
 
   
   const content = [
@@ -27,7 +29,7 @@ import InfiniteReverse from '../motions/InfiniteReverse'
 
 const Services = () => {
   return (
-    <main className='mt-5 w-full select-none'>
+    <main className='mt-5 w-full select-none relative'>
       <BackgroundLayout>
         <section className='flex flex-col gap-4 items-center justify-center p-5'>
           <div className='flex flex-col items-center'>
@@ -58,6 +60,13 @@ const Services = () => {
             </div>
           ))}
           </InfiniteReverse>
+
+          <div className='absolute top-[75%]' onClick={(e) => {
+            e.stopPropagation()
+           // handleClick()
+          }}>
+            <Button prop='View All Services' />
+          </div>
         </section>
       </BackgroundLayout>
     </main>
