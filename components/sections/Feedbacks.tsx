@@ -25,7 +25,7 @@ const content = [
 
 const Feedbacks = () => {
   return (
-    <main className='mt-5 w-full select-none'>
+    <main className='mt-5 md:mt-0 w-full select-none'>
       <BackgroundLayout>
         <section className='flex flex-col gap-4 items-center justify-center py-5'>
           <div className='flex flex-col items-center'>
@@ -44,7 +44,7 @@ const Feedbacks = () => {
           <hr className='w-full text-gray-700 '/>
           <FeedBackLoop>
             { content.map((c, idx) => (
-            <div key={idx} className='h-[250px] flex flex-col justify-between p-5 py-2'>
+            <div key={idx} className='h-[250px] md:h-[185px] flex flex-col justify-between p-5 py-2'>
               <p className=''> {c.feedback}</p>
               <div>
               <p className='text-xl font-bold'>{c.role}</p>

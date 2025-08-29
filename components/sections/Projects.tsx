@@ -41,7 +41,7 @@ const Projects = () => {
   }
 
   return (
-    <main className='mt-5 w-full relative'>
+    <main className='mt-5 md:mt-0 w-full relative'>
       <BackgroundLayout>
         <section className='flex flex-col items-center p-4 pb-8'>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2">

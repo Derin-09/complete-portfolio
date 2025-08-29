@@ -1,6 +1,6 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
-import Picture from '@/public/images/my-picture.jpg'
+import Picture from '@/public/images/my-pictureEditedUse.png'
 import BackgroundLayout from '../ui/layout'
 import Link from 'next/link'
 import RoleLoop from '../motions/RoleLoop'
@@ -32,7 +32,7 @@ const content: ContentType[] = [
 
 const About = () => {
   return (
-    <main className='pt-3'>
+    <main className='pt-3 md:pt-0'>
       <BackgroundLayout>
         <section className='w-full p-5'>
           <section className='mb-8 flex gap-3 h-[120px]'>

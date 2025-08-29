@@ -27,7 +27,7 @@ const content = [
 
 const Inspirations = () => {
   return (
-    <main className='mt-5 w-full select-none'>
+    <main className='mt-5 md:mt-0 w-full select-none'>
       <BackgroundLayout>
         <section className='flex flex-col gap-4 items-center justify-center p-5'>
           <div className='flex flex-col items-center'>

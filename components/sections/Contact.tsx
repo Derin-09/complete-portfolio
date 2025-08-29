@@ -7,7 +7,7 @@ import Email from '@/public/images/email.png'
 
 const Contact = () => {
   return (
-    <main className='mt-5 select-none'>
+    <main className='mt-5 md:mt-0 select-none'>
       <BackgroundLayout >
         <section className='p-5 flex flex-col gap-6 items-center justify-center'>
           <div>
