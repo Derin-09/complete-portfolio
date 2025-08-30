@@ -4,6 +4,7 @@ import Picture from '@/public/images/my-pictureEditedUse.png'
 import BackgroundLayout from '../ui/layout'
 import Link from 'next/link'
 import RoleLoop from '../motions/RoleLoop'
+import Download from '@/public/images/resumeDownload.png'
 
 type ContentType = {
   icon: string | StaticImageData,
@@ -32,18 +33,26 @@ const content: ContentType[] = [
 
 const About = () => {
   return (
-    <main className='pt-3 md:pt-0'>
+    <div className='pt-3 md:pt-0 select-none'>
       <BackgroundLayout>
         <section className='w-full p-5'>
           <section className='mb-8 flex gap-3 h-[120px]'>
             <div className=''>
-              <Image src={Picture} width={120} height={120} alt='My picture' className='rounded-2xl' />
+              <Image src={Picture} width={120} height={120} alt='My picture' className='rounded-2xl md:w-[160px]' />
             </div>
-            <div className=' flex flex-col space-y-2 '>
-              <div>
+            <div className=' flex flex-col space-y-2 w-full'>
+              <div className='md:flex justify-between items-center'>
                 <div className='flex items-center w-fit gap-2 px-3 py-1 rounded-full bg-[#191919]'>
                   <div className='w-2 h-2 bg-green-600 rounded-full'></div>
                   <p className='text-sm'>available to work</p>
+                </div>
+                <div className='hidden md:flex gap-2 items-center'>
+                  <p>Resume</p>
+                  <Link href={'/resume.pdf'} className="">
+                  <div className='hover:cursor-pointer'>
+                    <Image src={Download} alt='Download my resume'/>
+                  </div>
+                  </Link>
                 </div>
               </div>
               <p className='font-bold text-xl'>Sam-Ashimi Aderinsola</p>
@@ -75,11 +84,11 @@ const About = () => {
               <Link href={'https://www.linkedin.com/in/aderinsola-sam-ashimi/'} className="flex-1"><button className='w-full text-center py-5 rounded-xl bg-[#1F1F1F]'>LinkedIn</button></Link>
               <Link href={'https://github.com/Derin-09'} className="flex-1"><button className='w-full text-center py-5 rounded-xl bg-[#1F1F1F]'>Github</button></Link>
             </div>
-            <Link href={'/resume.pdf'} className="flex-1"><button className='text-center w-full py-5 rounded-xl bg-[#1F1F1F]'>Resume</button></Link>
+            <Link href={'/resume.pdf'} className="flex-1 md:hidden"><button className='text-center w-full py-5 rounded-xl bg-[#1F1F1F]'>Resume</button></Link>
           </section>
         </section>
       </BackgroundLayout>
-    </main>
+    </div>
   )
 }
 

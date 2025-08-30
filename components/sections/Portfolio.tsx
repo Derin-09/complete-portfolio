@@ -14,32 +14,75 @@ import Contact from './Contact'
 const Portfolio = () => {
 
   return (
-    <main className="md:grid grid-cols-9 gap-3 auto-rows-min md:grid-flow-row-dense md:max-w-7xl">
-      <div className="col-span-3 col-start-3">
+    <main className="md:grid grid-cols-5 gap-3 auto-rows-min md:grid-flow-row-dense md:max-w-7xl select-none">
+      <section className='hidden md:flex flex-col gap-3 lg:col-span-1 md:col-span-2 '>
+        <div className="">
+          <Stacks />
+        </div>
+        <div className="">
+          <Projects />
+        </div>
+        <div className="">
+          <Services />
+        </div>
+      </section>
+
+      <section className='hidden md:flex flex-col gap-3 lg:col-span-2 md:col-span-3 '>
+        <div className="">
+          <Beginning />
+        </div>
+        <div className="">
+          <About />
+        </div>
+        <div className="">
+          <Inspirations />
+        </div>
+      </section>
+
+      <section className='hidden md:flex flex-col gap-3 lg:col-span-2 md:col-span-5 '>
+        <section className='flex gap-3'>
+          <div className="lg:flex-1 md:flex-3">
+            <Experience />
+          </div>
+          <div className="lg:flex-1 md:flex-1">
+            <Feedbacks />
+          </div>
+        </section>
+        <section className="flex gap-3">
+          <div className="lg:flex-4 md:flex-3">
+            <Hobbies />
+          </div>
+          <div className="lg:flex-5 md:flex-6">
+            <Contact />
+          </div>
+        </section>
+      </section>
+
+      <div className="md:hidden col-span-3 col-start-3">
         <Beginning />
       </div>
-      <div className="col-span-3 col-start-3">
+      <div className="md:hidden col-span-3 col-start-3">
         <About />
       </div>
-      <div className="col-span-3 col-start-3">
+      <div className="md:hidden col-span-3 col-start-3">
         <Inspirations />
       </div>
-      <div className="col-span-2 col-start-1">
+      <div className="md:hidden col-span-2 col-start-1">
         <Stacks />
       </div>
-      <div className="col-span-2 col-start-1">
+      <div className="md:hidden col-span-2 col-start-1">
         <Projects />
       </div>
-      <div className="col-span-2 col-start-1">
+      <div className="md:hidden col-span-2 col-start-1">
         <Services />
       </div>
-      <div className="col-span-2 col-start-6">
+      <div className="md:hidden col-span-2 col-start-6">
         <Experience />
       </div>
-      <div className="col-span-2 col-start-8">
+      <div className="md:hidden col-span-2 col-start-8">
         <Feedbacks />
       </div>
-      <section className="md:grid grid-cols-9 gap-3 col-span-4 col-start-6">
+      <section className="md:hidden md:gri grid-cols-9 gap-3 col-span-4 col-start-6">
         <div className="col-span-4">
           <Hobbies />
         </div>

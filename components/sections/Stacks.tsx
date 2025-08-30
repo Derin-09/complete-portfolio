@@ -39,7 +39,7 @@ const Stacks = () => {
   const chunkedStacks = chunk(techStack, 4)
 
   return (
-    <main className='mt-5 md:mt-0 w-full'>
+    <div className='mt-5 md:mt-0 w-full select-none'>
       <BackgroundLayout>
         <section className='flex flex-col items-center justify-center p-4'>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2">
@@ -80,7 +80,7 @@ const Stacks = () => {
           </div>
         </section>
       </BackgroundLayout>
-    </main>
+    </div>
   )
 }
 

@@ -24,7 +24,7 @@ import Button from '../ui/Button'
 
 const Experience = () => {
   return (
-    <main className='mt-5 md:mt-0 w-full relative select-none'>
+    <div className='mt-5 md:mt-0 w-full relative select-none'>
       <BackgroundLayout>
         <section className='flex flex-col gap-4 items-center justify-center p-5'>
           <div className='flex flex-col items-center'>
@@ -55,7 +55,7 @@ const Experience = () => {
           </div>
         </section>
       </BackgroundLayout>
-    </main>
+    </div>
   )
 }
 

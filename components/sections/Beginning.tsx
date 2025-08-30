@@ -30,9 +30,9 @@ const content: ContentType[] = [
 
 const Beginning = () => {
     return (
-        <main className='flex md:gap-3 justify-between w-full'>
+        <div className='flex gap-3 justify-between w-full select-none'>
             {content.map((c, index) => (
-                <div key={index} className=''>
+                <div key={index} className='flex-1'>
                     <BackgroundLayout>
                         <section className='p-3'>
                         <div
@@ -56,7 +56,7 @@ const Beginning = () => {
                     </BackgroundLayout>
                 </div>
             ))}
-        </main>
+        </div>
     )
 }
 

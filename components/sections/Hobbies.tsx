@@ -9,22 +9,22 @@ import Button from '../ui/Button'
   
   const content = [
       {
-        text: "Inventors Community",
-        period: "01/25 - present"
+        text: "Singing Alt Rock",
       },
       {
-        text: "NextGen Hackathon",
-        period: "06/25 - present"
+        text: "Cooking New Recipes",
       },
       {
-        text: "Accessivo",
-        period: "08/25 - present"
+        text: "Writing Urban Legends",
+      },
+      {
+        text: "Drawing Ultrarealism",
       },
     ]
 
 const Hobbies = () => {
   return (
-    <main className='mt-5 md:mt-0 w-full relative select-none'>
+    <div className='mt-5 md:mt-0 w-full h-full relative select-none'>
       <BackgroundLayout>
         <section className='flex flex-col gap-4 items-center justify-center p-5'>
           <div className='flex flex-col items-center'>
@@ -42,13 +42,13 @@ const Hobbies = () => {
           </div>
           
             { content.map((c, idx) => (
-            <div key={idx} className="w-full h-[70px] rounded-xl p-2 px-3 text-[#916CE7] bg-[#191919]">
-              <p className='font-semibold'> {c.text}</p>  <p className=' text-[#999999]'> {c.period} </p>
+            <div key={idx} className="w-full h-[70px] md:h-[60px] rounded-xl md:flex items-center p-2 px-3  bg-[#191919]">
+              <p className='font-semibold'> {c.text}</p> 
             </div>
           ))}
         </section>
       </BackgroundLayout>
-    </main>
+    </div>
   )
 }
 

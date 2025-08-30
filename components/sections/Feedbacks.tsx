@@ -25,7 +25,7 @@ const content = [
 
 const Feedbacks = () => {
   return (
-    <main className='mt-5 md:mt-0 w-full select-none'>
+    <div className='mt-5 md:mt-0 w-full select-none'>
       <BackgroundLayout>
         <section className='flex flex-col gap-4 items-center justify-center py-5'>
           <div className='flex flex-col items-center'>
@@ -55,7 +55,7 @@ const Feedbacks = () => {
           </FeedBackLoop>
         </section>
       </BackgroundLayout>
-    </main>
+    </div>
   )
 }
 

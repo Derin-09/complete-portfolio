@@ -27,9 +27,9 @@ const content = [
 
 const Inspirations = () => {
   return (
-    <main className='mt-5 md:mt-0 w-full select-none'>
+    <div className='mt-5 md:mt-0 w-full select-none'>
       <BackgroundLayout>
-        <section className='flex flex-col gap-4 items-center justify-center p-5'>
+        <section className='flex flex-col gap-4 md:gap-2 items-center justify-center p-5'>
           <div className='flex flex-col items-center'>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2">
             <Image
@@ -46,21 +46,21 @@ const Inspirations = () => {
           
           <InfiniteCarousel speed={5} gap={15}>
             { content.map((c, idx) => (
-            <div key={idx} className="w-[200px] h-[70px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
+            <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
               {c.first} <br/> {c.second}
             </div>
           ))}
           </InfiniteCarousel>
           <InfiniteReverse speed={5} gap={15}>
             { content.map((c, idx) => (
-            <div key={idx} className="w-[200px] h-[70px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
+            <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
               {c.first} <br/> {c.second}
             </div>
           ))}
           </InfiniteReverse>
         </section>
       </BackgroundLayout>
-    </main>
+    </div>
   )
 }
 

@@ -11,9 +11,9 @@ export default function BackgroundLayout({ children }: { children: ReactNode }) 
         rounded-2xl 
         bg-[#141414] 
         hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]
-        hover:scale-[90%]
+        hover:scale-[97%]
         transition-shadow duration-300
-        ${ clicked ? 'shadow-[0_0_20px_rgba(168,85,247,0.3)] scale-[95%]' : 'shadow-none scale-[100%]'}
+        ${ clicked ? 'lg:shadow-none lg:scale-100 shadow-[0_0_20px_rgba(168,85,247,0.3)] scale-[95%]' : 'shadow-none scale-[100%]'}
       `}
     >
       {children}

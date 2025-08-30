@@ -7,13 +7,13 @@ import Email from '@/public/images/email.png'
 
 const Contact = () => {
   return (
-    <main className='mt-5 md:mt-0 select-none'>
+    <div className='mt-5 md:mt-0 select-none h-full'>
       <BackgroundLayout >
-        <section className='p-5 flex flex-col gap-6 items-center justify-center'>
+        <section className='p-5 flex flex-col gap-6 md:gap-16 items-center justify-center'>
           <div>
             <Image src={Crown} width={50} height={50} alt=''/>
           </div>
-          <div className='flex flex-col justify-center items-center'>
+          <div className='flex flex-col justify-center items-center text-center'>
           <p className='text-xl font-bold'> Let&apos;s Connect</p>
           <p> Thanks for visiting my portfolio!</p>
           </div>
@@ -38,7 +38,7 @@ const Contact = () => {
           </div>
         </section>
       </BackgroundLayout>
-    </main>
+    </div>
   )
 }
 
