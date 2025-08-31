@@ -9,7 +9,9 @@ import "swiper/css/pagination"
 import {
   SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiSass,
   SiFramer, SiGit, SiGithub, SiFigma, SiPostman,
-  SiCloudinary, SiGooglechrome, SiShadcnui
+  SiCloudinary, SiGooglechrome, SiShadcnui,
+  SiNextdotjs,
+  SiTailwindcss
 } from "react-icons/si"
 import BackgroundLayout from '../ui/layout'
 
@@ -19,6 +21,8 @@ export const techStack = [
   { name: "JavaScript", icon: SiJavascript },
   { name: "TypeScript", icon: SiTypescript },
   { name: "React", icon: SiReact },
+  { name: "Next.js", icon: SiNextdotjs },
+  { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "SCSS", icon: SiSass },
   { name: "Framer Motion", icon: SiFramer },
   { name: "shadcn/ui", icon: SiShadcnui },
@@ -30,7 +34,7 @@ export const techStack = [
   { name: "Chrome API", icon: SiGooglechrome },
 ]
 
-// helper fn → breaks array into groups of 4
+
 const chunk = <T,>(arr: T[], size: number): T[][] =>
   arr.reduce((acc, _, i) =>
     i % size ? acc : [...acc, arr.slice(i, i + size)], [] as T[][])
@@ -63,14 +67,14 @@ const Stacks = () => {
             >
               {chunkedStacks.map((group, idx) => (
                 <SwiperSlide key={idx} className="flex justify-center">
-                  <section className="grid grid-cols-2 grid-rows-2 gap-3 w-full">
+                  <section className="grid grid-cols-2 grid-rows-2 gap-3 md:gap-1 w-full">
                     {group.map(({ name, icon: Icon }) => (
                       <div
                         key={name}
-                        className="rounded-xl flex gap-2 items-center p-2 bg-[#191919]"
+                        className="rounded-xl flex gap-2 md:gap-1 items-center p-2 bg-[#191919]"
                       >
-                        <Icon className="bg-[#282828] p-3 rounded-lg flex-shrink-0" />
-                        <div className="text-lg">{name}</div>
+                        <Icon className="bg-[#282828] p-2 rounded-md flex-shrink-0 w-10 h-10 md:w-8 md:h-8" />
+                        <div className="text-lg md:text-xs">{name}</div>
                       </div>
                     ))}
                   </section>

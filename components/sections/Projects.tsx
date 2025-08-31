@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Inspo from '@/public/images/inspo.png'
 import InfiniteCarousel from '../motions/InfiniteCarousel'
 import Button from '../ui/Button'
+import AnimatedModal from '../ui/ModalEntrance'
 
 const content = [
   {
@@ -66,7 +67,7 @@ const Projects = () => {
 
           <div className='absolute top-[75%]' onClick={(e) => {
             e.stopPropagation()
-           // handleClick()
+           handleClick()
           }}>
             <Button prop='View Works' />
           </div>
@@ -74,31 +75,33 @@ const Projects = () => {
       </BackgroundLayout>
 
       {isClicked && (
-        <section className='w-screen h-screen bg-black/60 fixed inset-0 z-50 items-center justify-center px-15' onClick={handleClick}>
-          <section className='flex flex-col gap-0 ' onClick={(e) => e.stopPropagation()}>
-            <div className={`
-        rounded-2xl 
-        bg-[#141414]
-        transition-shadow duration-300`}>
-              My Projects
-            </div>
-            <section className='flex '>
-            { content.map((c, idx) => (
-            <section key={idx} className='bg-[#141414] w-full'>
-              <p>{c.title}</p>
-              <div className='w-full'>
-              <Image src={`/images/${c.alt}.png`} width={200} height={200} alt={c.alt} className='w-full'/>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </section>
-          ))}
-          </section>
-          </section>
-        </section>
+        // <section className='w-screen h-screen bg-black/60 fixed inset-0 z-50 items-center justify-center px-15' onClick={handleClick}>
+        //   <section className='flex flex-col gap-0 ' onClick={(e) => e.stopPropagation()}>
+        //     <div className={`
+        // rounded-2xl 
+        // bg-[#141414]
+        // transition-shadow duration-300`}>
+        //       My Projects
+        //     </div>
+        //     <section className='flex '>
+        //     { content.map((c, idx) => (
+        //     <section key={idx} className='bg-[#141414] w-full'>
+        //       <p>{c.title}</p>
+        //       <div className='w-full'>
+        //       <Image src={`/images/${c.alt}.png`} width={200} height={200} alt={c.alt} className='w-full'/>
+        //       </div>
+        //       <p>
+        //         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+        //         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        //         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        //       </p>
+        //     </section>
+        //   ))}
+        //   </section>
+        //   </section>
+        // </section>
+
+        <AnimatedModal />
       )}
     </div>
   )

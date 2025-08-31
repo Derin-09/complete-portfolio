@@ -14,7 +14,7 @@ import Contact from './Contact'
 const Portfolio = () => {
 
   return (
-    <main className="md:grid grid-cols-5 gap-3 auto-rows-min md:grid-flow-row-dense md:max-w-7xl select-none">
+    <main className="md:grid grid-cols-5 gap-3 auto-rows-min md:grid-flow-row-dense md:max-w-[1440px] select-none">
       <section className='hidden md:flex flex-col gap-3 lg:col-span-1 md:col-span-2 '>
         <div className="">
           <Stacks />

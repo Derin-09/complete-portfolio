@@ -33,7 +33,7 @@ const content: ContentType[] = [
 
 const About = () => {
   return (
-    <div className='pt-3 md:pt-0 select-none'>
+    <div className='pt-3 md:pt-0 select-none '>
       <BackgroundLayout>
         <section className='w-full p-5'>
           <section className='mb-8 flex gap-3 h-[120px]'>
