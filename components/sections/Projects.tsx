@@ -1,11 +1,14 @@
 'use client'
 import React, { useState } from 'react'
 import BackgroundLayout from '../ui/layout'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Inspo from '@/public/images/inspo.png'
 import InfiniteCarousel from '../motions/InfiniteCarousel'
 import Button from '../ui/Button'
 import AnimatedModal from '../ui/ModalEntrance'
+import { SwiperSlide } from 'swiper/react'
+import { AnimatePresence, motion } from 'framer-motion'
+import Link from 'next/link'
 
 const content = [
   {
@@ -31,6 +34,60 @@ const content = [
   {
     title: "Ice-Cream Figma",
     alt: "icecream"
+  },
+]
+
+type SlidesType = {
+  title: string
+  content: string
+  pic: StaticImageData | string
+  icon: StaticImageData | string
+  link: string
+}
+
+
+const slides: SlidesType[] = [
+  {
+    title: "Bloom & Root",
+    content: "Bloom & Root is a sleek plant-themed app where style meets growth—minimal design, natural vibes, pure focus, built for calm productivity and inspired green living",
+    pic: "/images/bloomroot.png",
+    icon: "/images/icons/bloomroot.ico",
+    link: "https://bloomroot.vercel.app/"
+  },
+  {
+    title: "Harmony Feeds",
+    content: "Harmony Feeds is a sleek animal feed site, simple and functional, with a clean, modern platform delivering curated content with balance, clarity, and flow.",
+    pic: "/images/harmony.png",
+    icon: "/images/icons/harmony.ico",
+    link: "https://harmonyfeeds.vercel.app/"
+  },
+  {
+    title: "MyFlix",
+    content: "MyFlix site is a clean movie recommendation hub—discover, preview, and explore films with a sleek UI, simple navigation, and a cinematic feel without the clutter.",
+    pic: "/images/myflix.png",
+    icon: "/images/icons/myflix.ico",
+    link: "https://netflix-senior.vercel.app/"
+  },
+  {
+    title: "Ice Cream Shop",
+    content: "Ice Cream Shop project is a playful, mouth-watering design—bright colors, smooth layouts, and a sweet modern vibe that makes every scoop feel digital-delicious.",
+    pic: "/images/icecream.png",
+    icon: "/images/icons/default.png",
+    link: "https://icecreamfigma.vercel.app/"
+  },
+  {
+    title: "Countries",
+    content: "Countries is a sleek explorer of the world—search and filter make finding nations smooth, fast, and interactive, while the design keeps it intuitive and visually engaging for effortless discovery.",
+    pic: "/images/countries.png",
+    icon: "/images/icons/countries.ico",
+    link: "https://countries-derin.vercel.app/"
+  },
+  {
+    title: "Math Game",
+    content: "Math Game sharpens quick thinking—simple multiplications, a ticking timer, and live scorekeeping keep it fun, fast-paced, and addictive for anyone wanting to test their brainpower.",
+    pic: "/images/mathgame.png",
+    icon: "/images/icons/default.png",
+    link: "https://derin-09.github.io/maths-game/"
   },
 ]
 
@@ -67,41 +124,68 @@ const Projects = () => {
 
           <div className='absolute top-[75%]' onClick={(e) => {
             e.stopPropagation()
-           handleClick()
+            handleClick()
           }}>
             <Button prop='View Works' />
           </div>
         </section>
       </BackgroundLayout>
 
-      {isClicked && (
-        // <section className='w-screen h-screen bg-black/60 fixed inset-0 z-50 items-center justify-center px-15' onClick={handleClick}>
-        //   <section className='flex flex-col gap-0 ' onClick={(e) => e.stopPropagation()}>
-        //     <div className={`
-        // rounded-2xl 
-        // bg-[#141414]
-        // transition-shadow duration-300`}>
-        //       My Projects
-        //     </div>
-        //     <section className='flex '>
-        //     { content.map((c, idx) => (
-        //     <section key={idx} className='bg-[#141414] w-full'>
-        //       <p>{c.title}</p>
-        //       <div className='w-full'>
-        //       <Image src={`/images/${c.alt}.png`} width={200} height={200} alt={c.alt} className='w-full'/>
-        //       </div>
-        //       <p>
-        //         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-        //         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        //         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        //       </p>
-        //     </section>
-        //   ))}
-        //   </section>
-        //   </section>
-        // </section>
 
-        <AnimatedModal />
+      {/* {MODAL VIEW} */}
+      {isClicked && (
+        <AnimatedModal props='My Projects'>
+          {slides.map((item, idx) => (
+            <SwiperSlide key={idx}>
+              <AnimatePresence mode="wait">
+                {isClicked && (
+                  <motion.div
+                    key={item.title} // ensures exit/enter per slide
+                    initial={{ x: 1000, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: -1000, opacity: 0 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+                    className="text-gray-300 p-4 space-y-3 bg-[#191919] rounded-b-xl"
+                  >
+                    <div className="w-full">
+                      <div className="flex justify-between items-center text-center">
+                        <div className="flex gap-3 items-center text-center">
+                          <Image
+                            src={item.icon}
+                            width={40}
+                            height={40}
+                            alt=""
+                            className="rounded-full"
+                          />
+                          <p className="text-white text-center font-semibold">
+                            {item.title}
+                          </p>
+                        </div>
+                        <Link href={item.link}>
+                          <div className=" text-[#916CE7] pr-5">Live</div>
+                        </Link>
+                      </div>
+
+                      <div className="w-full mt-3">
+                        <Image
+                          src={item.pic}
+                          width={200}
+                          height={100}
+                          alt=""
+                          className="rounded-lg w-full"
+                        />
+                      </div>
+
+                      <div className="w-full p-3 pb-10">
+                        <p>{item.content}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </SwiperSlide>
+          ))}
+        </AnimatedModal>
       )}
     </div>
   )

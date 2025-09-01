@@ -35,8 +35,11 @@ const About = () => {
   return (
     <div className='pt-3 md:pt-0 select-none '>
       <BackgroundLayout>
+
+        {/* {MY PICTURE, OTHER DETAILS, FIRST SECTION } */}
+
         <section className='w-full p-5'>
-          <section className='mb-8 flex gap-3 h-[120px]'>
+          <section className='mb-8 lg:mb-4 flex gap-3 h-[120px]'>
             <div className=''>
               <Image src={Picture} width={120} height={120} alt='My picture' className='rounded-2xl md:w-[160px]' />
             </div>
@@ -46,12 +49,15 @@ const About = () => {
                   <div className='w-2 h-2 bg-green-600 rounded-full'></div>
                   <p className='text-sm'>available to work</p>
                 </div>
+
+
+                {/* {RESUME POSITION IN DESKTOP VIEW} */}
                 <div className='hidden md:flex gap-2 items-center'>
                   <p>Resume</p>
                   <Link href={'/resume.pdf'} className="">
-                  <div className='hover:cursor-pointer'>
-                    <Image src={Download} alt='Download my resume'/>
-                  </div>
+                    <div className='hover:cursor-pointer'>
+                      <Image src={Download} alt='Download my resume' />
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -60,7 +66,9 @@ const About = () => {
             </div>
           </section>
 
-          <section className="gap-2 px-3 py-4 rounded-xl bg-[#1A1A1A] space-y-1 mb-8">
+
+          {/* {SECOND SECTION} */}
+          <section className="gap-2 px-3 py-4 rounded-xl bg-[#1A1A1A] space-y-1 mb-8 lg:mb-4">
             {content.map((c, index) => (
               <div
                 key={index}
@@ -79,11 +87,14 @@ const About = () => {
           </section>
 
 
-          <section className='space-y-4'>
+          {/* {THIRD SECTION} */}
+          <section className='space-y-4 lg:space-y-0'>
             <div className='flex justify-between gap-4'>
               <Link href={'https://www.linkedin.com/in/aderinsola-sam-ashimi/'} className="flex-1"><button className='w-full text-center py-5 rounded-xl bg-[#1F1F1F]'>LinkedIn</button></Link>
               <Link href={'https://github.com/Derin-09'} className="flex-1"><button className='w-full text-center py-5 rounded-xl bg-[#1F1F1F]'>Github</button></Link>
             </div>
+
+            {/* {RESUME POSITION IN MOBILE VIEW} */}
             <Link href={'/resume.pdf'} className="flex-1 md:hidden"><button className='text-center w-full py-5 rounded-xl bg-[#1F1F1F]'>Resume</button></Link>
           </section>
         </section>

@@ -22,7 +22,7 @@ export default function InfiniteVertical({ children, speed = 30, gap = 20 }: Inf
   if (!items.length) return null
 
   return (
-    <div className="overflow-hidden w-full h-[200px]"> 
+    <div className="overflow-hidden w-full h-[200px]">
       <motion.div
         ref={containerRef}
         className="flex flex-col"

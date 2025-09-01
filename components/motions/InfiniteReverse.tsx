@@ -13,9 +13,9 @@ export default function InfiniteReverse({ children, speed = 30, gap = 20 }: Infi
   const containerRef = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(0)
 
-    useEffect(() => {
+  useEffect(() => {
     if (containerRef.current) {
-      setWidth(containerRef.current.scrollWidth / 2) 
+      setWidth(containerRef.current.scrollWidth / 2)
     }
   }, [children])
 
@@ -27,7 +27,7 @@ export default function InfiniteReverse({ children, speed = 30, gap = 20 }: Infi
       <motion.div
         ref={containerRef}
         className="flex"
-        animate={{ x: [ -width, 0] }}
+        animate={{ x: [-width, 0] }}
         transition={{
           repeat: Infinity,
           ease: "linear",

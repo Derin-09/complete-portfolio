@@ -13,9 +13,9 @@ export default function InfiniteCarousel({ children, speed = 30, gap = 20 }: Inf
   const containerRef = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(0)
 
-    useEffect(() => {
+  useEffect(() => {
     if (containerRef.current) {
-      setWidth(containerRef.current.scrollWidth / 2) 
+      setWidth(containerRef.current.scrollWidth / 2)
     }
   }, [children])
 
