@@ -12,6 +12,9 @@ const manRope = Manrope({
 export const metadata: Metadata = {
   title: "Derin | Software Developer",
   description: "",
+  icons: {
+    icon: '/favicon.ico'
+  }
 };
 
 export default function RootLayout({
