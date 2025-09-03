@@ -111,7 +111,7 @@ const Services = () => {
 
       {/* {MODAL VIEW} */}
       {isClicked && (
-        <AnimatedModal props='My Work Experience'>
+        <AnimatedModal props='My Services'>
           {slides.map((item, idx) => (
             <SwiperSlide key={idx}>
               <AnimatePresence mode="wait">

@@ -30,33 +30,40 @@ const content: ContentType[] = [
 
 const Beginning = () => {
     return (
-        <div className='flex gap-3 justify-between w-full select-none'>
+        <div className="flex gap-3 sm:gap-3 justify-between w-full select-none">
             {content.map((c, index) => (
-                <div key={index} className='flex-1'>
+                <div key={index} className="flex-1 min-w-0">
                     <BackgroundLayout>
-                        <section className='p-3'>
-                            <div
-                                className='flex items-center justify-center gap-2 ' >
-                                <div className='text-[35px] font-medium bg-clip-text bg-gradient-to-b from-[#d22121] to-[#111111] '>
-                                    <Counter
-                                        target={Number(c.num)} />
+                        <section className="p-3 md:p-3">
+                            <div className="flex items-center justify-center gap-1 sm:gap-2">
+                                <div className="text-[20px] xs:text-[28px] sm:text-[35px] font-medium bg-clip-text bg-gradient-to-b from-[#d22121] to-[#111111]">
+                                    <Counter target={Number(c.num)} />
                                 </div>
-                                <div>
-                                    <Image src={Plus} width={20} height={20} alt='' className='max-w-[30px] h-auto' />
-                                </div>
+                                <Image
+                                    src={Plus}
+                                    width={16}
+                                    height={16}
+                                    alt=""
+                                    className="max-w-[20px] h-auto"
+                                />
                             </div>
 
-                            <div className='flex items-center h-full text-center gap-2 px-3 py-1 rounded-full bg-[#1A1A1A]'>
-                                <div>
-                                    <Image src={c.icon} width={16} height={16} alt='' className='max-w-[30px]' />
-                                </div>
-                                <p className='text-sm'>{c.word}</p>
+                            <div className="flex items-center justify-center text-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 rounded-full bg-[#1A1A1A]">
+                                <Image
+                                    src={c.icon}
+                                    width={12}
+                                    height={12}
+                                    alt=""
+                                    className="max-w-[20px]"
+                                />
+                                <p className="text-xs sm:text-sm truncate">{c.word}</p>
                             </div>
                         </section>
                     </BackgroundLayout>
                 </div>
             ))}
         </div>
+
     )
 }
 

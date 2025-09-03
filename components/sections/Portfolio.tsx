@@ -18,7 +18,7 @@ const Portfolio = () => {
     
     <div className="relative">
       <CursorGlow />
-    <main className="md:grid grid-cols-5 gap-3 auto-rows-min md:grid-flow-row-dense md:max-w-[1440px] select-none" style={{ 'fontFamily': 'var(--font-manrope)' }}>
+    <main className="md:grid md:grid-cols-5 gap-3 auto-rows-min md:grid-flow-row-dense md:max-w-[1440px] select-none" style={{ 'fontFamily': 'var(--font-manrope)' }}>
 
       {/* {DESKTOP VIEW} */}
 
