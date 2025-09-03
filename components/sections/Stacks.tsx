@@ -18,7 +18,7 @@ import BackgroundLayout from '../ui/layout'
 export const techStack = [
   { name: "HTML", icon: SiHtml5 },
   { name: "CSS", icon: SiCss3 },
-  { name: "JavaScript", icon: SiJavascript },
+  { name: "JavaScript (ES6+)", icon: SiJavascript },
   { name: "TypeScript", icon: SiTypescript },
   { name: "React", icon: SiReact },
   { name: "Next.js", icon: SiNextdotjs },
