@@ -56,7 +56,7 @@ const Stacks = () => {
             />
             <p className="text-sm leading-none">My Stacks</p>
           </div>
-          <p className='mb-7'>Tech Arsenal</p>
+          <p className='mb-7 lg:mb-7 md:mb-12'>Tech Arsenal</p>
 
           <div className="w-full">
             <Swiper

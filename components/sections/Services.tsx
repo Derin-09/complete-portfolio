@@ -81,7 +81,7 @@ const Services = () => {
               />
               <p className="text-sm leading-none">Services</p>
             </div>
-            <p className='mb-7'>Solutions Suites</p>
+            <p className='mb-7 lg:mb-7 md:mb-11'>Solutions Suites</p>
           </div>
 
           <InfiniteCarousel speed={50} gap={15}>

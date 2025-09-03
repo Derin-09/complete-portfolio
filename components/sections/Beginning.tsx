@@ -12,12 +12,12 @@ type ContentType = {
 
 const content: ContentType[] = [
     {
-        num: "01",
+        num: "03",
         icon: "/images/experience.png",
         word: "Experience"
     },
     {
-        num: "03",
+        num: "05",
         icon: "/images/collabs.png",
         word: "Collabs"
     },

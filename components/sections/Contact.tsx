@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className='mt-5 md:mt-0 select-none h-full'>
       <BackgroundLayout>
-        <section className='p-5 flex flex-col gap-6 lg:gap-10 items-center justify-center'>
+        <section className='p-5 flex flex-col gap-6 md:gap-12 lg:gap-10 items-center justify-center'>
           <div>
             <Image src={Crown} width={50} height={50} alt='' />
           </div>

@@ -6,6 +6,7 @@ import { Pagination, Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
+import Image from "next/image"
 
 
 export default function AnimatedModal({ props, children }: { props: string, children: ReactNode }) {
@@ -34,11 +35,14 @@ export default function AnimatedModal({ props, children }: { props: string, chil
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -200, opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="text-xl font-bold text-white"
+              className="text-xl font-bold text-white relative"
             >
-              <section className="w-full flex justify-center items-center py-3 bg-[#191919] rounded-t-xl text-[#C3A7FF] text-2xl font-bold">
+              <section className="w-full flex justify-center items-center py-3 bg-[#191919] rounded-t-xl text-[#C3A7FF] text-2xl font-bold ">
                 <p>{props}</p>
               </section>
+              <div className="absolute top-6 right-3" onClick={() => setOpen(false)}>
+                <Image src={'/images/xButton.png'} width={10} height={10} alt="exit"/>
+              </div>
             </motion.div>
 
             {/* Content Section w/ Swiper */}

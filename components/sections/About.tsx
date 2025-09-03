@@ -41,7 +41,7 @@ const About = () => {
         <section className='w-full p-5'>
           <section className='mb-8 lg:mb-4 flex gap-3 h-[120px]'>
             <div className=''>
-              <Image src={Picture} width={120} height={120} alt='My picture' className='rounded-2xl md:w-[160px]' />
+              <Image src={Picture} width={120} height={120} alt='My picture' className='rounded-2xl md:w-[160px] md:h-fit w-[200px] h-full' />
             </div>
             <div className=' flex flex-col space-y-2 w-full'>
               <div className='md:flex justify-between items-center'>

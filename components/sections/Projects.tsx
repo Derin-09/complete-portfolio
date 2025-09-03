@@ -112,7 +112,7 @@ const Projects = () => {
             />
             <p className="text-sm leading-none">Projects</p>
           </div>
-          <p className='mb-7'>Works Gallery</p>
+          <p className='mb-7 lg:mb-7 md:mb-11'>Works Gallery</p>
 
           <InfiniteCarousel speed={15} gap={20}>
             {content.map((c, idx) => (
