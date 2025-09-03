@@ -46,7 +46,7 @@ const slides: SlidesType[] = [
       "Contributed to Git-based team workflows and performed regular code reviews."
     ],
     role: "Frontend Developer",
-    date: '01/25 - present'
+    date: '01/25'
   },
   {
     title: "Accessivo Internship",
@@ -58,7 +58,7 @@ const slides: SlidesType[] = [
       "Assisted in debugging, testing, and refining frontend code for smooth performance.",
     ],
     role: "Frontend Development Intern",
-    date: '07/25 - present'
+    date: '07/25'
   },
   {
     title: "NextGen Hackathon",
@@ -71,7 +71,7 @@ const slides: SlidesType[] = [
       "Integrated APIs to fetch and display real-time data efficiently.",
     ],
     role: "Frontend Developer (Participant)",
-    date: '06/25 - present'
+    date: '06/25'
   },
 ]
 
