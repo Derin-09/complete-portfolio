@@ -66,7 +66,7 @@ const slides: SlidesType[] = [
     content: "MyFlix site is a clean movie recommendation hub—discover, preview, and explore films with a sleek UI, simple navigation, and a cinematic feel without the clutter.",
     pic: "/images/myflix.png",
     icon: "/images/icons/myflix.ico",
-    link: "https://netflix-senior.vercel.app/"
+    link: "https://myflix-movies.vercel.app/"
   },
   {
     title: "Ice Cream Shop",
