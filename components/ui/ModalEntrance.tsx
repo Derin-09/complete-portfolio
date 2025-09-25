@@ -45,7 +45,6 @@ export default function AnimatedModal({ props, children }: { props: string, chil
               </div>
             </motion.div>
 
-            {/* Content Section w/ Swiper */}
             <Swiper
               modules={[Pagination, Navigation]}
               pagination={{ clickable: true }}

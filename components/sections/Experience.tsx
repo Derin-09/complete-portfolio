@@ -13,7 +13,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 const content = [
   {
     text: "Inventors Community",
-    period: "01/25"
+    period: "01/22"
   },
   {
     text: "NextGen Hackathon",
@@ -21,7 +21,7 @@ const content = [
   },
   {
     text: "Accessivo",
-    period: "08/2"
+    period: "03/25"
   },
 ]
 

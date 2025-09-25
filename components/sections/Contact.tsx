@@ -25,8 +25,8 @@ const Contact = () => {
               href="mailto:aderinsolasamashimi@gmail.com"
               className='py-5 flex flex-1 justify-center items-center rounded-xl bg-[#1F1F1F]'
             >
-              <div className='flex justify-center gap-2'>
-                <Image src={Email} width={30} height={30} alt='email' />
+              <div className='flex justify-center gap-2 items-center'>
+                <Image src={Email} width={100} height={100} alt='email' className='w-4 h-4'/>
                 <p>Email me</p>
               </div>
             </a>
@@ -38,8 +38,8 @@ const Contact = () => {
               rel="noopener noreferrer"
               className='py-5 flex flex-1 justify-center items-center rounded-xl bg-[#1F1F1F]'
             >
-              <div className='flex justify-center gap-2'>
-                <Image src={WhatsApp} width={30} height={30} alt='whatsapp' />
+              <div className='flex justify-center gap-2 items-center'>
+                <Image src={WhatsApp} width={30} height={30} alt='whatsapp' className='w-4 h-4'/>
                 <p>WhatsApp</p>
               </div>
             </a>
