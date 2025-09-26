@@ -35,6 +35,10 @@ const content = [
     title: "Ice-Cream Figma",
     alt: "icecream"
   },
+  {
+    title: " Weather Dashboard",
+    alt: "weather-dashboard"
+  },
 ]
 
 type SlidesType = {
@@ -48,6 +52,20 @@ type SlidesType = {
 
 const slides: SlidesType[] = [
   {
+    title: "MyFlix",
+    content: "MyFlix site is a clean movie recommendation hub—discover, preview, and explore films with a sleek UI, simple navigation, and a cinematic feel without the clutter.",
+    pic: "/images/myflix.png",
+    icon: "/images/icons/myflix.ico",
+    link: "https://myflix-movies.vercel.app/"
+  },
+  {
+    title: "Weather Dashboard",
+    content: "“A responsive weather dashboard that fetches live data to display forecasts, air quality, and key metrics like wind, UV index, and humidity with interactive charts and city search.",
+    pic: "/images/weather-dashboard.png",
+    icon: "/images/icons/default.png",
+    link: "https://openweather-dashboard.vercel.app/"
+  },
+  {
     title: "Bloom & Root",
     content: "Bloom & Root is a sleek plant-themed app where style meets growth—minimal design, natural vibes, pure focus, built for calm productivity and inspired green living",
     pic: "/images/bloomroot.png",
@@ -60,13 +78,6 @@ const slides: SlidesType[] = [
     pic: "/images/harmony.png",
     icon: "/images/icons/harmony.ico",
     link: "https://harmonyfeeds.vercel.app/"
-  },
-  {
-    title: "MyFlix",
-    content: "MyFlix site is a clean movie recommendation hub—discover, preview, and explore films with a sleek UI, simple navigation, and a cinematic feel without the clutter.",
-    pic: "/images/myflix.png",
-    icon: "/images/icons/myflix.ico",
-    link: "https://myflix-movies.vercel.app/"
   },
   {
     title: "Ice Cream Shop",
