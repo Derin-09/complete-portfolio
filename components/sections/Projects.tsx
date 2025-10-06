@@ -12,6 +12,10 @@ import Link from 'next/link'
 
 const content = [
   {
+    title: "Nuroki",
+    alt: "nuroki"
+  },
+  {
     title: "MyFlix",
     alt: "myflix"
   },
@@ -51,6 +55,13 @@ type SlidesType = {
 
 
 const slides: SlidesType[] = [
+  {
+    title: "Nuroki",
+    content: "Nuroki is a smart learning hub—track moods, journal growth, and explore AI-powered course insights through a sleek, personalized dashboard.",
+    pic: "/images/nuroki.png",
+    icon: "/images/icons/nuroki.ico",
+    link: "https://nuroki.vercel.app/"
+  },
   {
     title: "MyFlix",
     content: "MyFlix site is a clean movie recommendation hub—discover, preview, and explore films with a sleek UI, simple navigation, and a cinematic feel without the clutter.",
