@@ -36,8 +36,8 @@ const content = [
     alt: "mathgame"
   },
   {
-    title: "Ice-Cream Figma",
-    alt: "icecream"
+    title: "KoloSquad",
+    alt: "kolosquad"
   },
   {
     title: " Weather Dashboard",
@@ -91,11 +91,11 @@ const slides: SlidesType[] = [
     link: "https://harmonyfeeds.vercel.app/"
   },
   {
-    title: "Ice Cream Shop",
-    content: "Ice Cream Shop project is a playful, mouth-watering design—bright colors, smooth layouts, and a sweet modern vibe that makes every scoop feel digital-delicious.",
-    pic: "/images/icecream.png",
-    icon: "/images/icons/default.png",
-    link: "https://icecreamfigma.vercel.app/"
+    title: "KoloSquad",
+    content: "A savings circle for friends. Create or join squads, contribute together through Paystack, unlock badges, and track progress in real time.",
+    pic: "/images/kolosquad.png",
+    icon: "/images/icons/kolosquad.png",
+    link: "https://kolosquad.vercel.app/"
   },
   {
     title: "Countries",
