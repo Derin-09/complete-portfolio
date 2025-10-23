@@ -19,6 +19,11 @@ const content = [
     title: "MyFlix",
     alt: "myflix"
   },
+  
+  {
+    title: "KoloSquad",
+    alt: "kolosquad"
+  },
   {
     title: "Bloom & Root",
     alt: "bloomroot"
@@ -34,10 +39,6 @@ const content = [
   {
     title: "Math Game",
     alt: "mathgame"
-  },
-  {
-    title: "KoloSquad",
-    alt: "kolosquad"
   },
   {
     title: " Weather Dashboard",
@@ -94,7 +95,7 @@ const slides: SlidesType[] = [
     title: "KoloSquad",
     content: "A savings circle for friends. Create or join squads, contribute together through Paystack, unlock badges, and track progress in real time.",
     pic: "/images/kolosquad.png",
-    icon: "/images/icons/kolosquad.png",
+    icon: "/images/icons/kolosquad.ico",
     link: "https://kolosquad.vercel.app/"
   },
   {
