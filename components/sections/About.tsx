@@ -1,31 +1,33 @@
-import React from 'react'
+import React, { ElementType } from 'react'
 import Image, { StaticImageData } from 'next/image'
 import Picture from '@/public/images/my-pictureEditedUse.png'
 import BackgroundLayout from '../ui/layout'
 import Link from 'next/link'
 import RoleLoop from '../motions/RoleLoop'
 import Download from '@/public/images/resumeDownload.png'
+import { FaCode, FaGraduationCap, FaMap } from 'react-icons/fa'
+import { FaEarthAfrica } from 'react-icons/fa6'
 
 type ContentType = {
-  icon: string | StaticImageData,
+  icon: ElementType,
   word: string
 }
 
 const content: ContentType[] = [
   {
-    icon: "/images/location.png",
+    icon: FaMap,
     word: "Nigeria"
   },
   {
-    icon: "/images/earth.png",
+    icon: FaEarthAfrica,
     word: "English"
   },
   {
-    icon: "/images/flag.png",
+    icon: FaCode,
     word: "Frontend Developer"
   },
   {
-    icon: "/images/education.png",
+    icon: FaGraduationCap,
     word: "Bells University of Technology"
   },
 ]
@@ -69,21 +71,25 @@ const About = () => {
 
           {/* {SECOND SECTION} */}
           <section className="gap-2 px-3 py-4 rounded-xl bg-[#1A1A1A] space-y-1 mb-8 lg:mb-4">
-            {content.map((c, index) => (
+            {content.map((c, index) => { 
+              const Icon = c.icon
+              return(
               <div
                 key={index}
                 className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B1B1B]"
               >
-                <Image
+                {/* <Image
                   src={c.icon}
                   width={16}
                   height={16}
                   alt=""
                   className="object-contain"
-                />
+                /> */}
+                
+                <Icon color='#916CE7' />
                 <p className="text-sm leading-none">{c.word}</p>
               </div>
-            ))}
+            )})}
           </section>
 
 

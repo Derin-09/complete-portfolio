@@ -4,8 +4,8 @@ import Image from 'next/image'
 import Stack from '@/public/images/education.png'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination } from "swiper/modules"
-import "swiper/css"
-import "swiper/css/pagination"
+// import "swiper/css"
+// import "swiper/css/pagination"
 import {
   SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiSass,
   SiFramer, SiGit, SiGithub, SiFigma, SiPostman,
@@ -14,6 +14,7 @@ import {
   SiTailwindcss
 } from "react-icons/si"
 import BackgroundLayout from '../ui/layout'
+import { FaLayerGroup } from 'react-icons/fa'
 
 export const techStack = [
   { name: "HTML", icon: SiHtml5 },
@@ -47,13 +48,16 @@ const Stacks = () => {
       <BackgroundLayout>
         <section className='flex flex-col items-center justify-center p-4'>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2">
-            <Image
+            {/* <Image
               src={Stack}
               width={16}
               height={16}
               alt=""
               className="object-contain"
-            />
+            /> */}
+
+            
+              <FaLayerGroup color='#916CE7' />
             <p className="text-sm leading-none">My Stacks</p>
           </div>
           <p className='mb-7 lg:mb-7 md:mb-12'>Tech Arsenal</p>

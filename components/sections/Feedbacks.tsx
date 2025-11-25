@@ -3,6 +3,7 @@ import BackgroundLayout from '../ui/layout'
 import Image from 'next/image'
 import Inspo from '@/public/images/inspo.png'
 import FeedBackLoop from '../motions/FeedBackLoop'
+import { FaComment } from 'react-icons/fa'
 
 const content = [
   {
@@ -30,13 +31,15 @@ const Feedbacks = () => {
         <section className='flex flex-col gap-4 items-center justify-center py-5'>
           <div className='flex flex-col items-center'>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2">
-              <Image
+              {/* <Image
                 src={Inspo}
                 width={16}
                 height={16}
                 alt=""
                 className="object-contain"
-              />
+              /> */}
+
+              <FaComment color='#916CE7' />
               <p className="text-sm leading-none">Feedbacks</p>
             </div>
             <p className='mb-7'>What People Say</p>

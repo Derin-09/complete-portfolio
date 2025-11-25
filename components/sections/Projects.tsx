@@ -9,6 +9,7 @@ import AnimatedModal from '../ui/ModalEntrance'
 import { SwiperSlide } from 'swiper/react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
+import { FaFolder } from 'react-icons/fa'
 
 const content = [
   {
@@ -126,13 +127,15 @@ const Projects = () => {
       <BackgroundLayout>
         <section className='flex flex-col items-center p-4 pb-8'>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2">
-            <Image
+            {/* <Image
               src={Inspo}
               width={16}
               height={16}
               alt=""
               className="object-contain"
-            />
+            /> */}
+            
+              <FaFolder color='#916CE7' />
             <p className="text-sm leading-none">Projects</p>
           </div>
           <p className='mb-7 lg:mb-7 md:mb-11'>Works Gallery</p>

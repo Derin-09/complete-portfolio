@@ -9,24 +9,30 @@ import Button from '../ui/Button'
 import AnimatedModal from '../ui/ModalEntrance'
 import { SwiperSlide } from 'swiper/react'
 import { AnimatePresence, easeInOut, motion } from 'framer-motion'
+import { MdHomeRepairService } from 'react-icons/md'
+import { FaBullhorn, FaClock, FaPuzzlePiece, FaUserTie } from 'react-icons/fa'
 
 
 const content = [
   {
     first: "Team",
-    second: "Leadership"
+    second: "Leadership",
+    icon: FaUserTie
   },
   {
     first: "Problem",
-    second: "Solving"
+    second: "Solving",
+    icon: FaPuzzlePiece
   },
   {
     first: "Time",
-    second: "Management"
+    second: "Management",
+    icon: FaClock
   },
   {
     first: "Communication",
-    second: " "
+    second: " ",
+    icon: FaBullhorn
   },
 ]
 
@@ -72,31 +78,42 @@ const Services = () => {
         <section className='flex flex-col gap-4 md:gap-2 items-center justify-center p-5'>
           <div className='flex flex-col items-center'>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2">
-              <Image
+              {/* <Image
                 src={Inspo}
                 width={16}
                 height={16}
                 alt=""
                 className="object-contain"
-              />
+              /> */}
+              <MdHomeRepairService color='#916CE7' />
               <p className="text-sm leading-none">Services</p>
             </div>
             <p className='mb-7 lg:mb-7 md:mb-11'>Solutions Suites</p>
           </div>
 
           <InfiniteCarousel speed={50} gap={15}>
-            {content.map((c, idx) => (
-              <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
-                {c.first} <br /> {c.second}
+            {content.map((c, idx) => { 
+              const Icon = c.icon
+              return(
+              <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999] gap-3">
+                <Icon color='#916CE7' size={25}/>
+                <p>
+                {c.first} <br /> {c.second}</p>
               </div>
-            ))}
+            )})}
           </InfiniteCarousel>
           <InfiniteReverse speed={50} gap={15}>
-            {content.map((c, idx) => (
-              <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
+            {content.map((c, idx) => { 
+              const Icon = c.icon
+              return(
+              <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999] gap-3">
+                
+                <Icon color='#916CE7' size={25}/>
+                <p>
                 {c.first} <br /> {c.second}
+                </p>
               </div>
-            ))}
+            )})}
           </InfiniteReverse>
 
           <div className='absolute top-[75%]' onClick={(e) => {

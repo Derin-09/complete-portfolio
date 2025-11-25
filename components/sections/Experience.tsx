@@ -8,6 +8,7 @@ import Button from '../ui/Button'
 import AnimatedModal from '../ui/ModalEntrance'
 import { SwiperSlide } from 'swiper/react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { FaBriefcase } from 'react-icons/fa'
 
 
 const content = [
@@ -22,6 +23,14 @@ const content = [
   {
     text: "Accessivo",
     period: "03/25"
+  },
+  {
+    text: "Dijix Global Solutions",
+    period: "10/25"
+  },
+  {
+    text: "Astrotwig",
+    period: "11/25"
   },
 ]
 
@@ -73,6 +82,31 @@ const slides: SlidesType[] = [
     role: "Frontend Developer (Participant)",
     date: '06/25'
   },
+  {
+    title: "Dijix Global Solutions",
+    detail: "Handled core frontend work for delivering technology services across fintech, digital identity, integrations, and enterprise systems.",
+    content: [
+      "Developed high-performance frontend features using Next.js and TypeScript for fintech-focused dashboards.",
+      "Implemented reusable UI components with Tailwind, improving development speed and interface consistency.",
+      "Collaborated with backend engineers to integrate secure APIs for payments and identity verification flows.",
+      "Improved user experience by optimizing load times and implementing accessible, responsive layouts."
+    ],
+    role: "Frontend Developer",
+    date: "10/25"
+  },
+  {
+    title: "Astrotwig",
+    detail: "Worked on the frontend for a music streaming platform (web + mobile) inspired by Spotify, offering discovery, listening, creator features, and social music experiences.",
+    content: [
+      "Built dynamic pages and audio-focused interfaces using Next.js, Tailwind, and TypeScript.",
+      "Implemented Swiper-based carousels, onboarding flows, and multi-layout responsive screens.",
+      "Worked with REST APIs to fetch, cache, and display user-generated music content smoothly.",
+      "Collaborated with mobile developers and designers to ensure UI/UX consistency across platforms."
+    ],
+    role: "Frontend Developer",
+    date: "11/25"
+  },
+
 ]
 
 
@@ -88,13 +122,15 @@ const Experience = () => {
         <section className='flex flex-col gap-4 items-center justify-center p-5'>
           <div className='flex flex-col items-center'>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2">
-              <Image
+              {/* <Image
                 src={Inspo}
                 width={16}
                 height={16}
                 alt=""
                 className="object-contain"
-              />
+              /> */}
+
+              <FaBriefcase color='#916CE7' />
               <p className="text-sm leading-none">Experience</p>
             </div>
             <p className='mb-7'>Work Highlights</p>
@@ -117,7 +153,7 @@ const Experience = () => {
       </BackgroundLayout>
 
 
-      
+
 
       {/* {MODAL VIEW} */}
       {isClicked && (
@@ -127,7 +163,7 @@ const Experience = () => {
               <AnimatePresence mode="wait">
                 {isClicked && (
                   <motion.div
-                    key={item.title} 
+                    key={item.title}
                     initial={{ x: 1000, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: -1000, opacity: 0 }}

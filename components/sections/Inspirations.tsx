@@ -4,23 +4,31 @@ import Image from 'next/image'
 import Inspo from '@/public/images/inspo.png'
 import InfiniteCarousel from '../motions/InfiniteCarousel'
 import InfiniteReverse from '../motions/InfiniteReverse'
+import { AiFillBulb } from 'react-icons/ai'
+import { BsStars } from 'react-icons/bs'
+import { RiMagicFill } from 'react-icons/ri'
+import { FaDribbble, FaUserCheck } from 'react-icons/fa'
 
 const content = [
   {
     first: "Aesthetic",
-    second: "Approach"
+    second: "Approach",
+    icon: BsStars
   },
   {
     first: "Everyday",
-    second: "Creativity"
+    second: "Creativity",
+    icon: RiMagicFill
   },
   {
     first: "Dribble",
-    second: "Design"
+    second: "Design",
+    icon: FaDribbble
   },
   {
     first: "User-Centric",
-    second: "Design"
+    second: "Design",
+    icon: FaUserCheck
   },
 ]
 
@@ -32,31 +40,43 @@ const Inspirations = () => {
         <section className='flex flex-col gap-4 md:gap-2 items-center justify-center p-5'>
           <div className='flex flex-col items-center mb-7 lg:mb-4'>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-2">
-              <Image
+              {/* <Image
                 src={Inspo}
                 width={16}
                 height={16}
                 alt=""
                 className="object-contain"
-              />
+              /> */}
+              
+                            <AiFillBulb color='#916CE7' />
               <p className="text-sm leading-none">Inspirations</p>
             </div>
             <p className=''>Where I get my ideas</p>
           </div>
 
           <InfiniteCarousel speed={50} gap={15}>
-            {content.map((c, idx) => (
-              <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
+            {content.map((c, idx) => { 
+              const Icon = c.icon
+              return(
+              <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999] gap-3">
+                <Icon color='#916CE7' size={25}/>
+                <p>
                 {c.first} <br /> {c.second}
+                </p>
               </div>
-            ))}
+            )})}
           </InfiniteCarousel>
           <InfiniteReverse speed={50} gap={15}>
-            {content.map((c, idx) => (
-              <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999]">
+            {content.map((c, idx) => { 
+              const Icon = c.icon
+              return(
+              <div key={idx} className="w-[200px] h-[70px] md:h-[50px] rounded-xl flex items-center justify-center bg-[#191919] text-[#999999] gap-3">
+                <Icon color='#916CE7' size={25}/>
+                <p>
                 {c.first} <br /> {c.second}
+                </p>
               </div>
-            ))}
+            )})}
           </InfiniteReverse>
         </section>
       </BackgroundLayout>
