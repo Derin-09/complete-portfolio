@@ -14,23 +14,23 @@ import { FaBriefcase } from 'react-icons/fa'
 const content = [
   {
     text: "Inventors Community",
-    period: "01/22"
+    period: "01/2022 - 02/2025"
   },
   {
     text: "NextGen Hackathon",
-    period: "06/25"
+    period: "06/2025 - 09/025"
   },
   {
     text: "Accessivo",
-    period: "03/25"
+    period: "01/2025 - 03/2025"
   },
   {
     text: "Dijix Global Solutions",
-    period: "10/25"
+    period: "03/2025 - PRESENT"
   },
   {
     text: "Astrotwig",
-    period: "11/25"
+    period: "07/2025 - 12/2025"
   },
 ]
 
@@ -55,7 +55,7 @@ const slides: SlidesType[] = [
       "Contributed to Git-based team workflows and performed regular code reviews."
     ],
     role: "Frontend Developer",
-    date: '01/25'
+    date: '01/2022 - 02/2025'
   },
   {
     title: "Accessivo Internship",
@@ -67,7 +67,7 @@ const slides: SlidesType[] = [
       "Assisted in debugging, testing, and refining frontend code for smooth performance.",
     ],
     role: "Frontend Development Intern",
-    date: '07/25'
+    date: '01/2025 - 03/2025'
   },
   {
     title: "NextGen Hackathon",
@@ -80,7 +80,7 @@ const slides: SlidesType[] = [
       "Integrated APIs to fetch and display real-time data efficiently.",
     ],
     role: "Frontend Developer (Participant)",
-    date: '06/25'
+    date: '06/2025 - 09/2025'
   },
   {
     title: "Dijix Global Solutions",
@@ -92,7 +92,7 @@ const slides: SlidesType[] = [
       "Improved user experience by optimizing load times and implementing accessible, responsive layouts."
     ],
     role: "Frontend Developer",
-    date: "10/25"
+    date: "03/2025 - PRESENT"
   },
   {
     title: "Astrotwig",
@@ -104,7 +104,7 @@ const slides: SlidesType[] = [
       "Collaborated with mobile developers and designers to ensure UI/UX consistency across platforms."
     ],
     role: "Frontend Developer",
-    date: "11/25"
+    date: "07/2025 - 12/2025"
   },
 
 ]
@@ -176,7 +176,7 @@ const Experience = () => {
                           <p className='text-2xl font-semibold text-[#916CE7]'>{item.title}</p>
                           <p className=" font-semibold">{item.role}</p>
                         </div>
-                        <div className="  bg-gray-500 p-1 px-2 text-sm  rounded-full mr-5">{item.date}</div>
+                        <div className="  bg-gray-500 p-1 px-2 text-sm  rounded-full mr-5 text-center">{item.date}</div>
                       </div>
 
                       <div className=" mt-3 bg-[#161919]   border border-gray-400/50 p-4 rounded-lg w-full">
