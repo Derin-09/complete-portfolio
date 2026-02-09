@@ -78,13 +78,6 @@ const About = () => {
                 key={index}
                 className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1B1B1B]"
               >
-                {/* <Image
-                  src={c.icon}
-                  width={16}
-                  height={16}
-                  alt=""
-                  className="object-contain"
-                /> */}
                 
                 <Icon color='#916CE7' />
                 <p className="text-sm leading-none">{c.word}</p>
