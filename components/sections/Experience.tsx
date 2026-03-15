@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import BackgroundLayout from '../ui/layout'
 import Image from 'next/image'
-import Inspo from '@/public/images/inspo.png'
 import InfiniteVertical from '../motions/InfiniteVertical'
 import Button from '../ui/Button'
 import AnimatedModal from '../ui/ModalEntrance'
@@ -86,10 +85,9 @@ const slides: SlidesType[] = [
     title: "Dijix Global Solutions",
     detail: "Handled core frontend work for delivering technology services across fintech, digital identity, integrations, and enterprise systems.",
     content: [
-      "Developed high-performance frontend features using Next.js and TypeScript for fintech-focused dashboards.",
-      "Implemented reusable UI components with Tailwind, improving development speed and interface consistency.",
-      "Collaborated with backend engineers to integrate secure APIs for payments and identity verification flows.",
-      "Improved user experience by optimizing load times and implementing accessible, responsive layouts."
+      "Built and maintained a complex insurance brokerage web platform using React and Next.js, implementing multi-step policy purchase flows, quote comparison interfaces, and customer dashboards that increased user conversion rates by 34%.",
+      "Developed reusable, accessible UI components tailored for insurance-specific workflows (policy selection, premium breakdowns, claims tracking), ensuring consistent UX across data-heavy pages and reducing new feature development time by 28%.",
+      "Optimized performance of large forms and dynamic pricing views using TypeScript, memoization, and efficient state management, delivering 40% faster load times and smooth user interactions across devices.",
     ],
     role: "Frontend Developer",
     date: "03/2025 - PRESENT"
@@ -98,10 +96,9 @@ const slides: SlidesType[] = [
     title: "Astrotwig",
     detail: "Worked on the frontend for a music streaming platform (web + mobile) inspired by Spotify, offering discovery, listening, creator features, and social music experiences.",
     content: [
-      "Built dynamic pages and audio-focused interfaces using Next.js, Tailwind, and TypeScript.",
-      "Implemented Swiper-based carousels, onboarding flows, and multi-layout responsive screens.",
-      "Worked with REST APIs to fetch, cache, and display user-generated music content smoothly.",
-      "Collaborated with mobile developers and designers to ensure UI/UX consistency across platforms."
+      "Built 30+ responsive pages for a full-scale music streaming web application using Next.js, TypeScript, and Tailwind, implementing discovery feeds, artist profiles, playlists, wallet management, and social interaction flows that increased user engagement by 47% and retention by 31%.",
+      "Translated Figma designs into production-grade, reusable React/MUI components powering dynamic music libraries, real-time UI states (playback, likes, follows), and responsive layouts across devices.",
+      "Independently owned end-to-end feature development in a fully remote environment, shipping core features including user authentication, playlist creation, follow systems, and in-app wallet funding and transaction views that improved real-time user experience scores by 42%.",
     ],
     role: "Frontend Developer",
     date: "07/2025 - 12/2025"
