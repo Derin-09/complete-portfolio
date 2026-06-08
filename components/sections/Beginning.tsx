@@ -14,7 +14,7 @@ type ContentType = {
 
 const content: ContentType[] = [
     {
-        num: "03",
+        num: "04",
         icon: FaSmile,
         word: "Experience"
     },

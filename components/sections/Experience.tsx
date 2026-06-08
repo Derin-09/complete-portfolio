@@ -19,16 +19,16 @@ const content = [
     text: "NextGen Hackathon",
     period: "06/2025 - 09/025"
   },
+  // {
+  //   text: "Accessivo",
+  //   period: "01/2025 - 03/2025"
+  // },
   {
-    text: "Accessivo",
-    period: "01/2025 - 03/2025"
+    text: "Dijix Global Solutions (Part-Time)",
+    period: "03/2025 - 05/2026"
   },
   {
-    text: "Dijix Global Solutions",
-    period: "03/2025 - PRESENT"
-  },
-  {
-    text: "Astrotwig",
+    text: "Astrotwig (Part-Time Contract)",
     period: "07/2025 - 12/2025"
   },
 ]
@@ -48,26 +48,27 @@ const slides: SlidesType[] = [
     title: "Inventors Community",
     detail: "Part of a diverse network of developers collaborating on innovative projects, exchanging knowledge, and building impactful solutions together.",
     content: [
-      "Built 10+ responsive web pages with Next.js and Tailwind, reducing bounce rate by 25%.",
-      "Translated over 15 Figma designs into reusable components with pixel-accuracy.",
-      "Integrated Firebase Auth & Firestore for real-time user data sync across sessions.",
-      "Contributed to Git-based team workflows and performed regular code reviews."
+      "Developed responsive interfaces using React.js and TailwindCSS, building reusable UI systems that supported scalable feature development.",
+      "Integrated backend APIs and collaborated closely with backend teams to streamline frontend-to-database workflows.",
+      "Implemented reusable component patterns and shared UI libraries that reduced duplicated frontend effort.",
+      "Managed application state and frontend data flow using React patterns to improve maintainability and user experience.",
+      "Wrote unit tests using Jest and React Testing Library to improve UI stability and reduce regressions during feature releases."
     ],
     role: "Frontend Developer",
     date: '01/2022 - 02/2025'
   },
-  {
-    title: "Accessivo Internship",
-    detail: "Hands-on intern at Accessivo, working on multiple client-facing projects, translating ideas into interactive user interfaces while improving accessibility and performance.",
-    content: [
-      "Optimized site performance, achieving up to 30% faster load times.",
-      "Conducted accessibility audits, improving WCAG compliance.",
-      "Implemented responsive UIs with modern frameworks to meet client requirements.",
-      "Assisted in debugging, testing, and refining frontend code for smooth performance.",
-    ],
-    role: "Frontend Development Intern",
-    date: '01/2025 - 03/2025'
-  },
+  // {
+  //   title: "Accessivo Internship",
+  //   detail: "Hands-on intern at Accessivo, working on multiple client-facing projects, translating ideas into interactive user interfaces while improving accessibility and performance.",
+  //   content: [
+  //     "Optimized site performance, achieving up to 30% faster load times.",
+  //     "Conducted accessibility audits, improving WCAG compliance.",
+  //     "Implemented responsive UIs with modern frameworks to meet client requirements.",
+  //     "Assisted in debugging, testing, and refining frontend code for smooth performance.",
+  //   ],
+  //   role: "Frontend Development Intern",
+  //   date: '01/2025 - 03/2025'
+  // },
   {
     title: "NextGen Hackathon",
     detail: "Part of a diverse network of developers collaborating on innovative projects, exchanging knowledge, and building impactful solutions together.",
@@ -82,23 +83,26 @@ const slides: SlidesType[] = [
     date: '06/2025 - 09/2025'
   },
   {
-    title: "Dijix Global Solutions",
-    detail: "Handled core frontend work for delivering technology services across fintech, digital identity, integrations, and enterprise systems.",
+    title: "Dijix Global Solutions (Part-Time)",
+    detail: "Maintained a complex insurance brokerage platform using React, Next.js, and TypeScript, building reusable component systems, optimizing frontend performance, and delivering scalable customer-facing workflows.",
     content: [
-      "Built and maintained a complex insurance brokerage web platform using React and Next.js, implementing multi-step policy purchase flows, quote comparison interfaces, and customer dashboards that increased user conversion rates by 34%.",
-      "Developed reusable, accessible UI components tailored for insurance-specific workflows (policy selection, premium breakdowns, claims tracking), ensuring consistent UX across data-heavy pages and reducing new feature development time by 28%.",
-      "Optimized performance of large forms and dynamic pricing views using TypeScript, memoization, and efficient state management, delivering 40% faster load times and smooth user interactions across devices.",
+      "Maintained and enhanced a complex insurance brokerage platform using React, Next.js, and TypeScript, building multi-step policy purchase workflows, quote comparison systems, and customer dashboards.",
+      "Built reusable and accessible component systems using React hooks and composition patterns, improving consistency across policy selection, premium breakdown, and claims management flows.",
+      "Managed complex frontend state across large forms and pricing views using efficient state management patterns, optimizing rendering performance through memoization and reducing UI bottlenecks.",
+      "Implemented responsive, data-heavy interfaces while improving performance through component optimization and structured frontend architecture."
     ],
     role: "Frontend Developer",
-    date: "03/2025 - PRESENT"
+    date: "03/2025 - 05/2026"
   },
   {
-    title: "Astrotwig",
-    detail: "Worked on the frontend for a music streaming platform (web + mobile) inspired by Spotify, offering discovery, listening, creator features, and social music experiences.",
+    title: "Astrotwig (Part-Time Contract)",
+    detail: "Developed and optimized frontend experiences for a large-scale music streaming platform using React-based architecture with Next.js and TypeScript, building reusable component systems, managing real-time state, and delivering scalable user-facing features.",
     content: [
-      "Built 30+ responsive pages for a full-scale music streaming web application using Next.js, TypeScript, and Tailwind, implementing discovery feeds, artist profiles, playlists, wallet management, and social interaction flows that increased user engagement by 47% and retention by 31%.",
-      "Translated Figma designs into production-grade, reusable React/MUI components powering dynamic music libraries, real-time UI states (playback, likes, follows), and responsive layouts across devices.",
-      "Independently owned end-to-end feature development in a fully remote environment, shipping core features including user authentication, playlist creation, follow systems, and in-app wallet funding and transaction views that improved real-time user experience scores by 42%.",
+      "Built 30+ responsive interfaces using React-based architecture with Next.js, TypeScript, and TailwindCSS across discovery feeds, playlists, artist pages, and wallet systems.",
+      "Translated Figma designs into reusable React/MUI component systems, implementing responsive layouts and scalable UI patterns across multiple user workflows.",
+      "Managed frontend state and asynchronous data flows using React Query and Context patterns to support real-time interactions and dynamic content updates.",
+      "Optimized application performance using memoization, lazy loading, component reuse, and efficient rendering techniques.",
+      "Owned end-to-end feature delivery including authentication flows, protected routes, playlist systems, and payment-related interfaces within a remote agile environment."
     ],
     role: "Frontend Developer",
     date: "07/2025 - 12/2025"
