@@ -48,7 +48,7 @@ Run the development server:
 npm run dev
 ```
 
-Open `[https://aderinsola-portfolio.vercel.app/](https://aderinsola-portfolio.vercel.app/)` to view the site.
+Open [https://aderinsola-portfolio.vercel.app/](https://aderinsola-portfolio.vercel.app/) to view the site.
 
 ## Build & Production
 
