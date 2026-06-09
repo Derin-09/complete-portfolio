@@ -13,6 +13,12 @@ Key features:
 - Uses Swiper for carousel-style components and React Icons/simple-icons for logos/icons
 - Built with the Next.js App Router and Tailwind CSS styling
 
+
+## Screenshot
+
+<!-- <img width="1596" height="712" alt="Screenshot 2025-08-17 221808" src="https://github.com/user-attachments/assets/2df79d04-f01d-440c-a4ea-0571751ca563" /> -->
+![Screenshot](./public/images/portfolio-image.png)
+
 ## Tech Stack
 
 - Next.js 16+ (App Router)
@@ -48,7 +54,7 @@ Run the development server:
 npm run dev
 ```
 
-Open `http://localhost:3000` to view the site.
+Open [https://aderinsola-portfolio.vercel.app/](https://aderinsola-portfolio.vercel.app/) to view the site.
 
 ## Build & Production
 
@@ -78,6 +84,3 @@ npm run lint
 - The portfolio layout is composed from section components grouped into desktop and mobile views inside `components/sections/Portfolio.tsx`.
 - Global styles include Tailwind CSS imports and Swiper styling in `app/globals.css`.
 
-## License
-
-This repository is currently private by default and intended for personal portfolio presentation.
