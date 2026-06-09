@@ -13,6 +13,12 @@ Key features:
 - Uses Swiper for carousel-style components and React Icons/simple-icons for logos/icons
 - Built with the Next.js App Router and Tailwind CSS styling
 
+
+## Screenshot
+
+<!-- <img width="1596" height="712" alt="Screenshot 2025-08-17 221808" src="https://github.com/user-attachments/assets/2df79d04-f01d-440c-a4ea-0571751ca563" /> -->
+![Screenshot](./public/images/portfolio-image.png)
+
 ## Tech Stack
 
 - Next.js 16+ (App Router)
