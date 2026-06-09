@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 
 export default function RoleLoop() {
-  const roles = ["Frontend Developer", "Next.js Engineer", "AI/ML Enthusiast"]
+  const roles = ["Frontend Engineer", "FullStack Developer", "AI/ML Enthusiast"]
   const [index, setIndex] = useState(0)
 
   useEffect(() => {

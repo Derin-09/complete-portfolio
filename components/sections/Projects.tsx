@@ -57,13 +57,13 @@ type SlidesType = {
 
 
 const slides: SlidesType[] = [
-  {
-    title: "Nuroki",
-    content: "Nuroki is a smart learning hub—track moods, journal growth, and explore AI-powered course insights through a sleek, personalized dashboard.",
-    pic: "/images/nuroki.png",
-    icon: "/images/icons/nuroki.ico",
-    link: "https://nuroki.vercel.app/"
-  },
+  // {
+  //   title: "Nuroki",
+  //   content: "Nuroki is a smart learning hub—track moods, journal growth, and explore AI-powered course insights through a sleek, personalized dashboard.",
+  //   pic: "/images/nuroki.png",
+  //   icon: "/images/icons/nuroki.ico",
+  //   link: "https://nuroki.vercel.app/"
+  // },
   {
     title: "MyFlix",
     content: "MyFlix site is a clean movie recommendation hub—discover, preview, and explore films with a sleek UI, simple navigation, and a cinematic feel without the clutter.",
@@ -71,13 +71,13 @@ const slides: SlidesType[] = [
     icon: "/images/icons/myflix.ico",
     link: "https://myflix-movies.vercel.app/"
   },
-  {
-    title: "Weather Dashboard",
-    content: "“A responsive weather dashboard that fetches live data to display forecasts, air quality, and key metrics like wind, UV index, and humidity with interactive charts and city search.",
-    pic: "/images/weather-dashboard.png",
-    icon: "/images/icons/default.png",
-    link: "https://openweather-dashboard.vercel.app/"
-  },
+  // {
+  //   title: "Weather Dashboard",
+  //   content: "“A responsive weather dashboard that fetches live data to display forecasts, air quality, and key metrics like wind, UV index, and humidity with interactive charts and city search.",
+  //   pic: "/images/weather-dashboard.png",
+  //   icon: "/images/icons/default.png",
+  //   link: "https://openweather-dashboard.vercel.app/"
+  // },
   {
     title: "Bloom & Root",
     content: "Bloom & Root is a sleek plant-themed app where style meets growth—minimal design, natural vibes, pure focus, built for calm productivity and inspired green living",
@@ -99,20 +99,20 @@ const slides: SlidesType[] = [
     icon: "/images/icons/kolosquad.ico",
     link: "https://kolosquad.vercel.app/"
   },
-  {
-    title: "Countries",
-    content: "Countries is a sleek explorer of the world—search and filter make finding nations smooth, fast, and interactive, while the design keeps it intuitive and visually engaging for effortless discovery.",
-    pic: "/images/countries.png",
-    icon: "/images/icons/countries.ico",
-    link: "https://countries-derin.vercel.app/"
-  },
-  {
-    title: "Math Game",
-    content: "Math Game sharpens quick thinking—simple multiplications, a ticking timer, and live scorekeeping keep it fun, fast-paced, and addictive for anyone wanting to test their brainpower.",
-    pic: "/images/mathgame.png",
-    icon: "/images/icons/default.png",
-    link: "https://derin-09.github.io/maths-game/"
-  },
+  // {
+  //   title: "Countries",
+  //   content: "Countries is a sleek explorer of the world—search and filter make finding nations smooth, fast, and interactive, while the design keeps it intuitive and visually engaging for effortless discovery.",
+  //   pic: "/images/countries.png",
+  //   icon: "/images/icons/countries.ico",
+  //   link: "https://countries-derin.vercel.app/"
+  // },
+  // {
+  //   title: "Math Game",
+  //   content: "Math Game sharpens quick thinking—simple multiplications, a ticking timer, and live scorekeeping keep it fun, fast-paced, and addictive for anyone wanting to test their brainpower.",
+  //   pic: "/images/mathgame.png",
+  //   icon: "/images/icons/default.png",
+  //   link: "https://derin-09.github.io/maths-game/"
+  // },
 ]
 
 const Projects = () => {

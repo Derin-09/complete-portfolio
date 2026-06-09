@@ -14,10 +14,10 @@ type ContentType = {
 }
 
 const content: ContentType[] = [
-  {
-    icon: FaMap,
-    word: "Nigeria"
-  },
+  // {
+  //   icon: FaMap,
+  //   word: "Nigeria"
+  // },
   {
     icon: FaEarthAfrica,
     word: "English"
