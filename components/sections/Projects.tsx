@@ -12,19 +12,19 @@ import Link from 'next/link'
 import { FaFolder } from 'react-icons/fa'
 
 const content = [
-  {
-    title: "Nuroki",
-    alt: "nuroki"
-  },
+  // {
+  //   title: "Nuroki",
+  //   alt: "nuroki"
+  // },
   {
     title: "MyFlix",
     alt: "myflix"
   },
   
-  {
-    title: "KoloSquad",
-    alt: "kolosquad"
-  },
+  // {
+  //   title: "KoloSquad",
+  //   alt: "kolosquad"
+  // },
   {
     title: "Bloom & Root",
     alt: "bloomroot"
@@ -33,18 +33,18 @@ const content = [
     title: "Harmony Feeds",
     alt: "harmony"
   },
-  {
-    title: "Countries",
-    alt: "countries"
-  },
-  {
-    title: "Math Game",
-    alt: "mathgame"
-  },
-  {
-    title: " Weather Dashboard",
-    alt: "weather-dashboard"
-  },
+  // {
+  //   title: "Countries",
+  //   alt: "countries"
+  // },
+  // {
+  //   title: "Math Game",
+  //   alt: "mathgame"
+  // },
+  // {
+  //   title: " Weather Dashboard",
+  //   alt: "weather-dashboard"
+  // },
 ]
 
 type SlidesType = {
@@ -92,13 +92,13 @@ const slides: SlidesType[] = [
     icon: "/images/icons/harmony.ico",
     link: "https://harmonyfeeds.vercel.app/"
   },
-  {
-    title: "KoloSquad",
-    content: "A savings circle for friends. Create or join squads, contribute together through Paystack, unlock badges, and track progress in real time.",
-    pic: "/images/kolosquad.png",
-    icon: "/images/icons/kolosquad.ico",
-    link: "https://kolosquad.vercel.app/"
-  },
+  // {
+  //   title: "KoloSquad",
+  //   content: "A savings circle for friends. Create or join squads, contribute together through Paystack, unlock badges, and track progress in real time.",
+  //   pic: "/images/kolosquad.png",
+  //   icon: "/images/icons/kolosquad.ico",
+  //   link: "https://kolosquad.vercel.app/"
+  // },
   // {
   //   title: "Countries",
   //   content: "Countries is a sleek explorer of the world—search and filter make finding nations smooth, fast, and interactive, while the design keeps it intuitive and visually engaging for effortless discovery.",
